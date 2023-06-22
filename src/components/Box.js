@@ -6,13 +6,13 @@ const Box = () => {
   const boxHeight = 500;
   const squareSize = 50;
   const defaultIntensity = 1;
-  const disabledIntensity = 0.5;
+  const newIntensity = 0.5;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [intensities, setIntensities] = useState({
-    up: disabledIntensity,
+    up: newIntensity,
     down: defaultIntensity,
-    left: disabledIntensity,
+    left: newIntensity,
     right: defaultIntensity
   });
 
@@ -24,32 +24,32 @@ const Box = () => {
     switch (direction) {
       case 'up':
         newY = Math.max(0, newY - squareSize);
-        newIntensities.up = newY === 0 ? disabledIntensity : defaultIntensity;
-        newIntensities.down = newY === boxHeight - squareSize ? disabledIntensity : defaultIntensity;
-        console.log(newX , newY);
+        newIntensities.up = newY === 0 ? newIntensity : defaultIntensity;
+        newIntensities.down = newY === boxHeight - squareSize ? newIntensity : defaultIntensity;
+        // console.log(newX , newY);
         break;
       case 'down':
         newY = Math.min(boxHeight - squareSize, newY + squareSize);
-        newIntensities.up = newY === 0 ? disabledIntensity : defaultIntensity;
-        newIntensities.down = newY === boxHeight - squareSize ? disabledIntensity : defaultIntensity;
+        newIntensities.up = newY === 0 ? newIntensity : defaultIntensity;
+        newIntensities.down = newY === boxHeight - squareSize ? newIntensity : defaultIntensity;
         break;
       case 'left':
         newX = Math.max(0, newX - squareSize);
-        newIntensities.left = newX === 0 ? disabledIntensity : defaultIntensity;
-        newIntensities.right = newX === boxWidth - squareSize ? disabledIntensity : defaultIntensity;
+        newIntensities.left = newX === 0 ? newIntensity : defaultIntensity;
+        newIntensities.right = newX === boxWidth - squareSize ? newIntensity : defaultIntensity;
         break;
       case 'right':
         newX = Math.min(boxWidth - squareSize, newX + squareSize);
-        newIntensities.left = newX === 0 ? disabledIntensity : defaultIntensity;
-        newIntensities.right = newX === boxWidth - squareSize ? disabledIntensity : defaultIntensity;
+        newIntensities.left = newX === 0 ? newIntensity : defaultIntensity;
+        newIntensities.right = newX === boxWidth - squareSize ? newIntensity : defaultIntensity;
         break;
       default:
         break;
     }
-    if (newIntensities.up === defaultIntensity && newIntensities.down === defaultIntensity &&
-      newIntensities.left === defaultIntensity && newIntensities.right === defaultIntensity) {
-      newIntensities[direction] = defaultIntensity;
-    }
+    // if (newIntensities.up === defaultIntensity && newIntensities.down === defaultIntensity &&
+    //   newIntensities.left === defaultIntensity && newIntensities.right === defaultIntensity) {
+    //   newIntensities[direction] = defaultIntensity;
+    // }
 
     setPosition({ x: newX, y: newY });
     setIntensities(newIntensities);
@@ -79,4 +79,4 @@ const Box = () => {
   )
 }
 
-export default Box
+export default Box;
