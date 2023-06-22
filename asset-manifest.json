@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mr-anshu-raj/box/static/css/main.1a17e2ad.css",
+    "main.js": "/mr-anshu-raj/box/static/js/main.12131f1b.js",
+    "static/js/787.80b1e9bb.chunk.js": "/mr-anshu-raj/box/static/js/787.80b1e9bb.chunk.js",
+    "index.html": "/mr-anshu-raj/box/index.html",
+    "main.1a17e2ad.css.map": "/mr-anshu-raj/box/static/css/main.1a17e2ad.css.map",
+    "main.12131f1b.js.map": "/mr-anshu-raj/box/static/js/main.12131f1b.js.map",
+    "787.80b1e9bb.chunk.js.map": "/mr-anshu-raj/box/static/js/787.80b1e9bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a17e2ad.css",
+    "static/js/main.12131f1b.js"
+  ]
+}
