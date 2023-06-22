@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/mr-anshu-raj/box/static/css/main.1a17e2ad.css",
-    "main.js": "/mr-anshu-raj/box/static/js/main.77332b5b.js",
-    "index.html": "/mr-anshu-raj/box/index.html",
-    "main.1a17e2ad.css.map": "/mr-anshu-raj/box/static/css/main.1a17e2ad.css.map",
-    "main.77332b5b.js.map": "/mr-anshu-raj/box/static/js/main.77332b5b.js.map"
+    "main.css": "/box/static/css/main.1a17e2ad.css",
+    "main.js": "/box/static/js/main.77332b5b.js",
+    "index.html": "/box/index.html",
+    "main.1a17e2ad.css.map": "/box/static/css/main.1a17e2ad.css.map",
+    "main.77332b5b.js.map": "/box/static/js/main.77332b5b.js.map"
   },
   "entrypoints": [
     "static/css/main.1a17e2ad.css",
